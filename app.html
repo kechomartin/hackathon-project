@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindfulHealer - Mental Health & Well-being</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <i class="fas fa-brain"></i>
+                    <span>MindfulHealer</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#therapists">Therapists</a></li>
+                    <li><a href="#subscription">Plans</a></li>
+                    <li><a href="#chatbot">Chat Support</a></li>
+                </ul>
+                <a href="#registration" class="btn btn-outline">Sign Up</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Your Mental Health Journey Starts Here</h1>
+                <p>Connect with licensed mental health professionals for virtual or in-person therapy sessions. Take the first step towards better well-being today.</p>
+                <a href="#registration" class="btn btn-primary">Get Started</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">How It Works</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-plus"></i>
+                    </div>
+                    <h3>Create Account</h3>
+                    <p>Register as a patient or mental health expert with our simple onboarding process.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h3>Book Sessions</h3>
+                    <p>Choose your preferred therapist and schedule sessions at your convenience.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>Virtual or In-Person</h3>
+                    <p>Attend therapy sessions online or in-person based on your preference.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section class="registration" id="registration">
+        <div class="container">
+            <h2 class="section-title">Join Our Community</h2>
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="patient-tab">Patient Registration</button>
+                <button class="tab-btn" data-tab="expert-tab">Expert Registration</button>
+            </div>
+            
+            <div id="patient-tab" class="tab-content active">
+                <form id="patient-form">
+                    <div class="form-group">
+                        <label for="age">Age</label>
+                        <input type="number" id="age" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="user-type">I am a</label>
+                        <select id="user-type" required>
+                            <option value="">Select option</option>
+                            <option value="child">Child (under 18)</option>
+                            <option value="adult">Adult (18+)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="full-name">Full Name</label>
+                        <input type="text" id="full-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Create Account</button>
+                </form>
+            </div>
+            
+            <div id="expert-tab" class="tab-content">
+                <form id="expert-form">
+                    <div class="form-group">
+                        <label for="expert-name">Full Name</label>
+                        <input type="text" id="expert-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="specialty">Specialty</label>
+                        <select id="specialty" required>
+                            <option value="">Select specialty</option>
+                            <option value="counselor">Counselor</option>
+                            <option value="psychologist">Psychologist</option>
+                            <option value="psychiatrist">Psychiatrist</option>
+                            <option value="therapist">Therapist</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="expert-email">Email</label>
+                        <input type="email" id="expert-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="expert-password">Password</label>
+                        <input type="password" id="expert-password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="license">License Number</label>
+                        <input type="text" id="license" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Apply as Expert</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Therapists Section -->
+    <section class="therapists" id="therapists">
+        <div class="container">
+            <h2 class="section-title">Our Mental Health Experts</h2>
+            <div class="therapists-grid">
+                <div class="therapist-card">
+                    <div class="therapist-img">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <div class="therapist-info">
+                        <h3>Dr. Sarah Johnson</h3>
+                        <p class="therapist-specialty">Clinical Psychologist</p>
+                        <p>Specializes in cognitive behavioral therapy with over 10 years of experience.</p>
+                        <a href="#" class="btn btn-primary" style="margin-top: 1rem;">Book Session</a>
+                    </div>
+                </div>
+                <div class="therapist-card">
+                    <div class="therapist-img">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <div class="therapist-info">
+                        <h3>Michael Rodriguez</h3>
+                        <p class="therapist-specialty">Licensed Counselor</p>
+                        <p>Focuses on adolescent mental health and family therapy.</p>
+                        <a href="#" class="btn btn-primary" style="margin-top: 1rem;">Book Session</a>
+                    </div>
+                </div>
+                <div class="therapist-card">
+                    <div class="therapist-img">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <div class="therapist-info">
+                        <h3>Dr. Amina Jallow</h3>
+                        <p class="therapist-specialty">Psychiatrist</p>
+                        <p>Expert in trauma-informed care and medication management.</p>
+                        <a href="#" class="btn btn-primary" style="margin-top: 1rem;">Book Session</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subscription Section -->
+    <section class="subscription" id="subscription">
+        <div class="container">
+            <h2 class="section-title">Subscription Plans</h2>
+            <div class="plans">
+                <div class="plan-card">
+                    <h3>Basic Plan</h3>
+                    <div class="plan-price">$49<span>/month</span></div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> 2 Virtual Sessions</li>
+                        <li><i class="fas fa-check"></i> Chat Support</li>
+                        <li><i class="fas fa-check"></i> Wellness Resources</li>
+                        <li><i class="fas fa-times"></i> Physical Sessions</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline" style="color: var(--dark);">Select Plan</a>
+                </div>
+                <div class="plan-card popular">
+                    <h3>Standard Plan</h3>
+                    <div class="plan-price">$79<span>/month</span></div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> 4 Virtual Sessions</li>
+                        <li><i class="fas fa-check"></i> 1 Physical Session</li>
+                        <li><i class="fas fa-check"></i> Priority Support</li>
+                        <li><i class="fas fa-check"></i> Wellness Resources</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Select Plan</a>
+                </div>
+                <div class="plan-card">
+                    <h3>Premium Plan</h3>
+                    <div class="plan-price">$119<span>/month</span></div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> Unlimited Virtual Sessions</li>
+                        <li><i class="fas fa-check"></i> 4 Physical Sessions</li>
+                        <li><i class="fas fa-check"></i> 24/7 Support</li>
+                        <li><i class="fas fa-check"></i> Personalized Care Plan</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline" style="color: var(--dark);">Select Plan</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chatbot Section -->
+    <section class="chatbot" id="chatbot">
+        <div class="container">
+            <h2 class="section-title">AI Mental Health Assistant</h2>
+            <div class="chat-container">
+                <div class="chat-header">
+                    <h3>MindfulHealer Support Bot</h3>
+                </div>
+                <div class="chat-messages" id="chat-messages">
+                    <div class="message bot-message">
+                        Hello! I'm here to help you with mental health resources and support. How are you feeling today?
+                    </div>
+                </div>
+                <div class="chat-input">
+                    <input type="text" id="user-input" placeholder="Type your message here...">
+                    <button class="btn btn-primary" id="send-message">Send</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>MindfulHealer</h3>
+                    <p>Providing accessible mental health care to everyone, everywhere.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#therapists">Therapists</a></li>
+                        <li><a href="#subscription">Plans</a></li>
+                        <li><a href="#chatbot">Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>Email: support@mindfulhealer.com</p>
+                    <p>Phone: +1 (800) 123-HELP</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MindfulHealer. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
